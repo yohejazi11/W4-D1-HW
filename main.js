@@ -10,7 +10,7 @@ let url = 'https://http.cat/';
 let imageContainer = document.getElementById('imageContainer')
 resCodes.forEach(element => {
     fetch(url + element)
-        .then(response =>  response)
+        .then(response =>  response.url)
         .then(data => {
             let catCart=document.createElement('div');
             let image = document.createElement('img');
